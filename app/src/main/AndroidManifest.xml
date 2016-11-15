@@ -16,14 +16,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".SearchHomeActivity" />
-        <activity android:name=".SearchResultActivity" />
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".ChatActivity" />
+        <activity android:name=".SearchHomeActivity" />
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".ReviewActivity" />
         <activity android:name=".CenterActivity" />
         <activity android:name=".ProviderRegisterActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".SearchResultActivity"></activity>
     </application>
 
 </manifest>
