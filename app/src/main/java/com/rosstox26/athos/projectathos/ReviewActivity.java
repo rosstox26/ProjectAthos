@@ -23,7 +23,7 @@ public class ReviewActivity extends Activity implements RatingBar.OnRatingBarCha
         return super.onCreateOptionsMenu(menu);
     }
 
-
+        @Override
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
