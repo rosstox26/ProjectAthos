@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_center2"
     android:layout_width="match_parent"
@@ -10,4 +11,67 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.rosstox26.athos.projectathos.CenterActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:text="Write Review "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/buttonWriteReview"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMore1"
+        android:layout_above="@+id/buttonMore2"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Center one info....."
+        android:ems="10"
+        android:id="@+id/editTextInfo"
+        android:layout_above="@+id/buttonMore1"
+        android:layout_alignLeft="@+id/editTextCenterInfo2"
+        android:layout_alignStart="@+id/editTextCenterInfo2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Center Two Info..."
+        android:ems="10"
+        android:id="@+id/editTextCenterInfo2"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_below="@+id/buttonMore1"
+        android:layout_alignRight="@+id/buttonMore1"
+        android:layout_alignEnd="@+id/buttonMore1" />
+
+    <Button
+        android:text="More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/buttonMore2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonMore1"
+        android:layout_alignStart="@+id/buttonMore1" />
 </RelativeLayout>

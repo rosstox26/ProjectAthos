@@ -3,13 +3,17 @@ package com.rosstox26.athos.projectathos;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class CenterActivity extends Activity implements View.OnClickListener {
 //
     private Button buttonWriteReview;
     private Button buttonMore1;
     private Button buttonMore2;
+    private EditText editTextInfo;
+    private EditText editTextInfo2;
 
 
     @Override
