@@ -8,7 +8,7 @@ import android.widget.RadioButton;
 
 public class WelcomeActivity extends Activity implements View.OnClickListener{
 
-
+//
     private RadioButton radioButtonCustomer;
     private RadioButton radioButtonProvider;
     private Button buttonEnter;
