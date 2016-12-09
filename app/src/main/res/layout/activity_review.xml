@@ -10,4 +10,164 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.rosstox26.athos.projectathos.ReviewActivity">
 
+    <TextView
+        android:text="Your overall rating of your experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Title of your review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ratingBarOverall"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBarOverall"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.5"
+        android:minHeight="34dp"
+        android:maxHeight="40dip"
+        android:maxWidth="57dip"
+        android:minWidth="57dip"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Your review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText5"
+        android:hint="Please type here" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView11"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_alignEnd="@+id/editText5"
+        android:id="@+id/editText6"
+        android:hint="Please type here" />
+
+    <TextView
+        android:text="What type of visit was this?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="please rate the following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/ratingBarQuality"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.5" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingBarQuality"
+        android:layout_alignRight="@+id/ratingBarQuality"
+        android:layout_alignEnd="@+id/ratingBarQuality"
+        android:layout_marginTop="43dp"
+        android:id="@+id/ratingBarComfort"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.5" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBarQuality"
+        android:layout_alignLeft="@+id/ratingBarComfort"
+        android:layout_alignStart="@+id/ratingBarComfort"
+        android:layout_marginTop="27dp"
+        android:id="@+id/ratingBarService"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:text="Quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingBarQuality"
+        android:layout_toLeftOf="@+id/ratingBarQuality"
+        android:layout_toStartOf="@+id/ratingBarQuality"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:text="Comfort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBarQuality"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:text="Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBarComfort"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:id="@+id/textView16" />
+
+    <Button
+        android:text="Submit Review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmitReview"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
