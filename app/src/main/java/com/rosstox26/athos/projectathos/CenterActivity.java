@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class CenterActivity extends Activity implements View.OnClickListener {
-
+//
     private Button buttonWriteReview;
     private Button buttonMore1;
     private Button buttonMore2;
